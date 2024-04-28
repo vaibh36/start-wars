@@ -35,7 +35,7 @@ const TopView = () => {
             padding: 8
         }} maxW='4xl'>
             <Heading marginBottom={8}>Star War Character List</Heading>
-            {!isLoading && !hasError && <CardList characterData={characterData} />}
+            {!isLoading && !hasError && <CardList data-testid="character-list" characterData={characterData} />}
         </Container>
     )
 
